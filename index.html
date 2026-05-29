@@ -2,14 +2,13 @@
 <html lang="ar" dir="rtl">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4N3JK0W0W8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4N3JK0W0W8');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4N3JK0W0W8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4N3JK0W0W8');
+    </script>
     <meta charset="UTF-8">
     <meta name="msvalidate.01" content="E2802036CD50FEFBC112493921B0CAB0" />
     <meta name="google-site-verification" content="aA3zQB28Pee6RVJsjlky9cwPJ1BnVxqxHhYEiEWbZ3M" />
@@ -21,511 +20,11 @@
     <meta property="og:description" content="مدونة تقدم لك جرعة يومية من المحتوى العشوائي الممتع والمفيد بعيدًا عن التخصص">
     <title>eashwayiy • مدونة عشوائية لكل شيء</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <style>
-        /* ========= إعدادات المتغيرات والألوان - ثيم الأخضر والأبيض ========= */
-        :root {
-            --primary-green: #27ae60;
-            --light-green: #2ecc71;
-            --dark-green: #1e8449;
-            --soft-white: #f4f9f4;
-            --pure-white: #ffffff;
-            --text-dark: #2d3436;
-            --text-light: #636e72;
-            --accent-bg: #e8f5e9;
-            --shadow: 0 4px 20px rgba(39, 174, 96, 0.1);
-            --gradient-hero: linear-gradient(145deg, #1a6b38 0%, #27ae60 45%, #6fcf97 100%);
-            --border-radius-card: 24px;
-            --transition-smooth: all 0.35s cubic-bezier(0.2, 0.9, 0.4, 1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', 'Cairo', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background-color: var(--soft-white);
-            color: var(--text-dark);
-            line-height: 1.8;
-            font-size: 16px;
-        }
-
-        .container {
-            max-width: 1150px;
-            margin: 0 auto;
-            padding: 0 25px;
-        }
-
-        /* ========= شريط التنقل ========= */
-        .navbar {
-            background-color: rgba(255, 255, 255, 0.93);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            padding: 1rem 0;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 3px solid var(--primary-green);
-            transition: var(--transition-smooth);
-        }
-
-        .navbar .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .nav-brand h1 {
-            color: var(--primary-green);
-            font-size: 2.1rem;
-            letter-spacing: -1px;
-            font-weight: 800;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: var(--transition-smooth);
-            cursor: pointer;
-        }
-        .nav-brand h1:hover {
-            color: var(--dark-green);
-            transform: scale(1.04);
-        }
-        .nav-brand h1 span {
-            background: var(--primary-green);
-            color: #fff;
-            font-size: 1.2rem;
-            padding: 0.2rem 0.7rem;
-            border-radius: 30px;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 8px;
-        }
-
-        .nav-links li a {
-            text-decoration: none;
-            color: var(--text-dark);
-            margin-right: 15px;
-            font-weight: 700;
-            font-size: 1.05rem;
-            padding: 8px 18px;
-            border-radius: 30px;
-            transition: var(--transition-smooth);
-        }
-
-        .nav-links li a:hover {
-            color: var(--pure-white);
-            background: var(--primary-green);
-            box-shadow: 0 5px 18px rgba(39, 174, 96, 0.35);
-            transform: translateY(-2px);
-        }
-
-        /* ========= قسم الهيرو ========= */
-        .hero {
-            background: var(--gradient-hero);
-            color: var(--pure-white);
-            padding: 100px 0 130px;
-            text-align: center;
-            clip-path: ellipse(170% 100% at 50% 0%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -70px;
-            left: -70px;
-            width: 320px;
-            height: 320px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -50px;
-            right: -50px;
-            width: 280px;
-            height: 280px;
-            background: rgba(255, 255, 255, 0.06);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .hero h1 {
-            font-size: 3.6rem;
-            margin-bottom: 1.2rem;
-            text-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
-            font-weight: 800;
-            letter-spacing: -1px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2.3rem;
-            opacity: 0.93;
-            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-            position: relative;
-            z-index: 2;
-            max-width: 650px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .search-container {
-            display: flex;
-            justify-content: center;
-            max-width: 530px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 2;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
-            border-radius: 50px;
-        }
-
-        .search-box {
-            padding: 16px 28px;
-            flex-grow: 1;
-            border: none;
-            border-radius: 0 50px 50px 0;
-            /* RTL */
-            outline: none;
-            font-size: 1.05rem;
-            background: #fff;
-            color: #333;
-        }
-
-        .search-btn {
-            padding: 16px 30px;
-            border: none;
-            background-color: #1a3b2e;
-            color: white;
-            border-radius: 50px 0 0 50px;
-            /* RTL */
-            cursor: pointer;
-            font-weight: 700;
-            font-size: 1.05rem;
-            transition: background 0.3s, transform 0.2s;
-            white-space: nowrap;
-        }
-
-        .search-btn:hover {
-            background-color: #0f261d;
-            transform: scale(1.04);
-        }
-
-        /* ========= نتائج البحث ========= */
-        .search-results {
-            background: var(--pure-white);
-            padding: 40px 0;
-            border-bottom: 2px solid #e0e0e0;
-        }
-        .search-results h2 {
-            text-align: center;
-            margin-bottom: 25px;
-            color: var(--dark-green);
-        }
-        #resultsContainer {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-        .result-card {
-            background: var(--accent-bg);
-            padding: 20px;
-            border-radius: 18px;
-            border-right: 5px solid var(--primary-green);
-        }
-        .highlight {
-            background-color: #f9e79f;
-            color: #000;
-            font-weight: bold;
-            padding: 0 3px;
-            border-radius: 4px;
-        }
-
-        /* ========= كروت المقالات ========= */
-        .posts {
-            padding: 80px 0;
-        }
-
-        .posts h2,
-        .about h2,
-        .contact h2 {
-            text-align: center;
-            margin-bottom: 50px;
-            font-size: 2.4rem;
-            color: var(--dark-green);
-            position: relative;
-            font-weight: 800;
-        }
-
-        .posts h2::after,
-        .about h2::after,
-        .contact h2::after {
-            content: '';
-            display: block;
-            width: 70px;
-            height: 5px;
-            background: var(--light-green);
-            margin: 12px auto 0;
-            border-radius: 5px;
-        }
-
-        .posts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 35px;
-        }
-
-        .post-card {
-            background: var(--pure-white);
-            padding: 30px;
-            border-radius: var(--border-radius-card);
-            box-shadow: var(--shadow);
-            transition: var(--transition-smooth);
-            border: 1px solid rgba(39, 174, 96, 0.12);
-            display: flex;
-            flex-direction: column;
-            transform: rotate(0deg);
-        }
-
-        .post-card:hover {
-            transform: translateY(-14px) rotate(0.5deg);
-            box-shadow: 0 24px 45px rgba(39, 174, 96, 0.2);
-            border-color: var(--light-green);
-        }
-
-        .post-card:nth-child(odd):hover {
-            transform: translateY(-14px) rotate(-0.4deg);
-        }
-
-        .post-image {
-            font-size: 3.8rem;
-            background: var(--accent-bg);
-            text-align: center;
-            padding: 35px 20px;
-            border-radius: 20px;
-            margin-bottom: 22px;
-            transition: var(--transition-smooth);
-            background: linear-gradient(135deg, #e8f5e9, #d4efdf);
-        }
-        .post-card:hover .post-image {
-            background: #c8e6c9;
-            transform: scale(1.03);
-        }
-
-        .post-card h3 {
-            margin-bottom: 14px;
-            color: var(--dark-green);
-            font-size: 1.5rem;
-        }
-
-        .post-card p {
-            color: var(--text-light);
-            flex-grow: 1;
-        }
-
-        .read-more {
-            display: inline-block;
-            margin-top: 20px;
-            color: var(--primary-green);
-            text-decoration: none;
-            font-weight: 700;
-            border-bottom: 2px solid transparent;
-            transition: var(--transition-smooth);
-            align-self: flex-start;
-        }
-
-        .read-more:hover {
-            color: var(--dark-green);
-            border-bottom: 2px solid var(--dark-green);
-            transform: translateX(-6px);
-        }
-
-        /* ========= قسم حول ========= */
-        .about {
-            background-color: var(--pure-white);
-            padding: 80px 0;
-        }
-
-        .about-content {
-            background: var(--accent-bg);
-            padding: 45px;
-            border-radius: 24px;
-            border-right: 8px solid var(--primary-green);
-            box-shadow: var(--shadow);
-        }
-
-        .about-content p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            font-weight: 600;
-            color: var(--dark-green);
-        }
-
-        .about-list {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
-
-        .about-list li {
-            margin-bottom: 10px;
-            padding-right: 32px;
-            position: relative;
-            font-size: 1.1rem;
-            color: var(--text-dark);
-        }
-
-        .about-list li::before {
-            content: "✦";
-            position: absolute;
-            right: 0;
-            color: var(--primary-green);
-            font-size: 1.3rem;
-            line-height: 1.4;
-        }
-
-        /* ========= قسم التواصل ========= */
-        .contact {
-            padding: 80px 0;
-            background: var(--soft-white);
-        }
-
-        .contact-form {
-            max-width: 580px;
-            margin: 0 auto;
-            background: var(--pure-white);
-            padding: 45px;
-            border-radius: 24px;
-            box-shadow: var(--shadow);
-            border: 1px solid rgba(39, 174, 96, 0.15);
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            padding: 16px 18px;
-            margin-bottom: 22px;
-            border: 2px solid #e0e0e0;
-            border-radius: 14px;
-            outline: none;
-            width: 100%;
-            font-size: 1rem;
-            transition: border-color 0.3s, box-shadow 0.3s;
-            background: #fdfdfd;
-        }
-
-        .contact-form input:focus,
-        .contact-form textarea:focus {
-            border-color: var(--primary-green);
-            box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.08);
-        }
-
-        .contact-form textarea {
-            resize: vertical;
-            min-height: 130px;
-        }
-
-        .contact-form button {
-            background-color: var(--primary-green);
-            color: white;
-            padding: 16px;
-            border: none;
-            border-radius: 14px;
-            cursor: pointer;
-            font-size: 1.15rem;
-            font-weight: 700;
-            width: 100%;
-            transition: background 0.3s, transform 0.2s;
-            letter-spacing: 1px;
-        }
-
-        .contact-form button:hover {
-            background-color: var(--dark-green);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(30, 132, 73, 0.3);
-        }
-
-        /* ========= تذييل الصفحة ========= */
-        .footer {
-            background-color: var(--dark-green);
-            color: var(--pure-white);
-            text-align: center;
-            padding: 35px 0;
-            font-size: 1.05rem;
-        }
-
-        /* ========= التجاوب ========= */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            .hero p {
-                font-size: 1rem;
-            }
-            .nav-links {
-                display: none;
-            }
-            .navbar .container {
-                justify-content: center;
-            }
-            .search-container {
-                flex-direction: column;
-                gap: 10px;
-                box-shadow: none;
-            }
-            .search-box,
-            .search-btn {
-                border-radius: 30px !important;
-                width: 100%;
-            }
-            .posts-grid {
-                grid-template-columns: 1fr;
-            }
-            .about-list {
-                grid-template-columns: 1fr;
-            }
-            .contact-form {
-                padding: 25px;
-            }
-            .post-card:hover {
-                transform: translateY(-8px) rotate(0deg) !important;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero {
-                padding: 70px 0 100px;
-                clip-path: ellipse(200% 100% at 50% 0%);
-            }
-            .hero h1 {
-                font-size: 1.9rem;
-            }
-            .nav-brand h1 {
-                font-size: 1.5rem;
-            }
-            .container {
-                padding: 0 15px;
-            }
-        }
-    </style>
+    <!-- ربط ملف CSS الخارجي (الثيم الأزرق) -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts + Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- شريط التنقل -->
@@ -535,9 +34,9 @@
                 <h1>🎲 eashwayiy<span>.</span></h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#posts">عشوائيات</a></li>
-                <li><a href="#about">عنا</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="#posts"><i class="fas fa-dice-d6"></i> عشوائيات</a></li>
+                <li><a href="#about"><i class="fas fa-leaf"></i> عنا</a></li>
             </ul>
         </div>
     </nav>
@@ -545,11 +44,11 @@
     <!-- قسم الهيرو -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>🌀 عالم العشوائية يبدأ هنا</h1>
-            <p>مدونة تقدم لك كل ما هو غير متوقع – حقائق غريبة، نصائح طريفة، أفكار مبتكرة، ومحتوى لا يخضع لقانون التخصص</p>
+            <h1>🌀 عالَم العشوائية يبدأ من هنا</h1>
+            <p>مدونة تقدم لك كل ما هو غير متوقع – حقائق غريبة، نصائح طريفة، وأفكار مبتكرة بلا قيود التخصص</p>
             <div class="search-container">
-                <input type="text" id="searchInput" placeholder="ابحث عن أي شيء عشوائي..." class="search-box" aria-label="بحث عشوائي">
-                <button onclick="performSearch()" class="search-btn" aria-label="زر البحث">🔍 ابحث بعشوائية</button>
+                <input type="text" id="searchInput" placeholder="اكتب كلمة، مثلاً: ذكاء اصطناعي..." class="search-box">
+                <button onclick="performSearch()" class="search-btn"><i class="fas fa-search"></i> ابحث بعشوائية</button>
             </div>
         </div>
     </section>
@@ -567,28 +66,31 @@
         <div class="container">
             <h2>✨ جرعة عشوائية اليوم</h2>
             <div class="posts-grid" id="postsContainer">
-                <!-- سيتم ملؤها عشوائياً من البيانات الحقيقية -->
+                <!-- سيتم تعبئتها بالجافاسكريبت -->
             </div>
         </div>
     </section>
-<script>
-(function(iqpor){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = iqpor || {};
-s.src = "\/\/masculine-employment.com\/baXKVjs.d\/GBle0fYXWtcH\/_e\/mw9Pu\/ZoUfl\/kGPfTgcdwqN\/DAQFy\/NJj_UhtINzzeAH0WNfD\/Ic2zO\/Q_";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-</script>
+
+    <!-- السكربت الخارجي (يُرجى عدم إزالته) -->
+    <script>
+    (function(iqpor){
+        var d = document,
+            s = d.createElement('script'),
+            l = d.scripts[d.scripts.length - 1];
+        s.settings = iqpor || {};
+        s.src = "\/\/masculine-employment.com\/baXKVjs.d\/GBle0fYXWtcH\/_e\/mw9Pu\/ZoUfl\/kGPfTgcdwqN\/DAQFy\/NJj_UhtINzzeAH0WNfD\/Ic2zO\/Q_";
+        s.async = true;
+        s.referrerPolicy = 'no-referrer-when-downgrade';
+        l.parentNode.insertBefore(s, l);
+    })({})
+    </script>
+
     <!-- قسم عن العشوائية -->
     <section class="about" id="about">
         <div class="container">
             <h2>📦 ما الذي نقدمه؟</h2>
             <div class="about-content">
-                <p>مدونة <strong>eashwayiy</strong> هي مساحة حرة لكل ما هو عشوائي ومفيد في آنٍ واحد. لا قيود ولا تخصص... فقط أشياء قد تغير يومك:</p>
+                <p style="font-size:1.2rem; font-weight:500;">مدونة <strong>eashwayiy</strong> هي مساحة حرة لكل ما هو عشوائي ومفيد في آنٍ واحد. لا قيود ولا تخصص... فقط أشياء قد تغير يومك:</p>
                 <ul class="about-list">
                     <li>🧠 حقائق غريبة وعجيبة من كل العلوم</li>
                     <li>💡 حيل حياتية بسيطة وغير تقليدية</li>
@@ -601,7 +103,18 @@ l.parentNode.insertBefore(s, l);
         </div>
     </section>
 
-
+    <!-- قسم التواصل -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>📬 أرسل لنا فكرة عشوائية</h2>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="اسمك العشوائي" required>
+                <input type="email" placeholder="بريدك الإلكتروني (لن يظهر للعموم)">
+                <textarea placeholder="شاركنا فكرة غريبة أو اقتراح..." required></textarea>
+                <button type="submit"><i class="fas fa-paper-plane"></i> أرسل بشكل عشوائي</button>
+            </form>
+        </div>
+    </section>
 
     <!-- تذييل -->
     <footer class="footer">
@@ -610,132 +123,121 @@ l.parentNode.insertBefore(s, l);
 
     <script>
         // ========== بيانات المدونة الحقيقية ==========
-const blogPosts = [
-    {
-        id: 1,
-        icon: '💰',
-        title: "ربح البيتكوين من صنابير البيتكوين - دليل شامل 2026",
-        description: "شرح مفصل عن كيفية ربح البيتكوين من صنابير البيتكوين (Faucets) - أفضل طرق الحصول على عملات رقمية مجانية وأماكن موثوقة وآمنة",
-        keywords: ["ربح", "بيتكوين", "صنابير", "عملة"],
-        link: "posts/bitcoin-faucets.html",
-        excerpt: "صنابير البيتكوين (Bitcoin Faucets) هي مواقع وتطبيقات إلكترونية توفر للمستخدمين فرصة الحصول على كميات صغيرة من البيتكوين بشكل مجاني..."
-    },
-    {
-        id: 2,
-        icon: '🤖',
-        title: "الأكثر بحثاً في 2026: ثورة الذكاء الاصطناعي الشاملة",
-        description: "اكتشف لماذا أصبح الذكاء الاصطناعي الأداة الأكثر بحثاً في 2026. تعرف على أفضل الأدوات مثل ChatGPT وMidjourney وكيف تغير حياتنا اليومية.",
-        keywords: ["ذكاء اصطناعي", "2026", "ChatGPT", "أدوات AI", "تعلم الآلة", "تكنولوجيا"],
-        link: "posts/ai-trends-2026.html",
-        excerpt: "شهد عام 2026 طفرة هائلة في البحث عن أدوات الذكاء الاصطناعي. من توليد المحتوى إلى تحليل البيانات، أصبح الذكاء الاصطناعي جزءاً لا يتجزأ من حياتنا اليومية."
-    },
-    {
-        id: 3,
-        icon: '📈',
-        title: "العملات الرقمية 2026: كل شيء عن البيتكوين والإيثيريوم",
-        description: "تحليل شامل لأهم اتجاهات العملات الرقمية في 2026. لماذا لا يزال البيتكوين والإيثيريوم يسيطران على المشهد وكيف تستثمر بذكاء.",
-        keywords: ["عملات رقمية", "بيتكوين", "إيثيريوم", "استثمار", "كريبتو", "2026", "تداول"],
-        link: "posts/crypto-trends-2026.html",
-        excerpt: "في عام 2026، لا يزال سوق العملات الرقمية يهيمن على اهتمام المستثمرين. ارتفع حجم البحث عن 'كيفية شراء بيتكوين' بشكل كبير، مما يعكس رغبة الجميع في فهم هذا العالم المربح."
-    },
-    {
-        id: 4,
-        icon: '⚡',
-        title: "السيارات الكهربائية 2026: ثورة النقل التي لا يستطيع أحد تجاهلها",
-        description: "كل ما تريد معرفته عن السيارات الكهربائية وأسباب تصدرها محركات البحث في 2026. أفضل الموديلات ونصائح الشراء.",
-        keywords: ["سيارات كهربائية", "تسلا", "نقل مستدام", "2026", "بيئة", "طاقة"],
-        link: "posts/electric-vehicles-2026.html",
-        excerpt: "في عام 2026، أصبحت السيارات الكهربائية ليست مجرد رفاهية، بل ضرورة بيئية واقتصادية يتجه إليها العالم. تعرف على أحدث الموديلات وتقنيات الشحن."
-    },
-    {
-    id: 5,
-    icon: '🔐',
-    title: "الأمن السيبراني 2026: حماية خصوصيتك في العالم الرقمي",
-    description: "كل ما تريد معرفته عن الأمن السيبراني وأسباب تصدره محركات البحث في 2026. تهديدات حديثة وأفضل ممارسات الحماية.",
-    keywords: ["أمن سيبراني", "خصوصية رقمية", "حماية بيانات", "2026", "قرصنة", "تشفير"],
-    link: "posts/cyber-security-2026.html",
-    excerpt: "في عام 2026، تصاعدت التهديدات الرقمية بشكل غير مسبوق. تعرف على كيفية حماية بياناتك وأجهزتك من أحدث أساليب الاختراق والتصيد."
-    },
-    {
-    id: 6,
-    icon: '📱',
-    title: "خصوصية الهاتف 2026: الدليل الكامل لتحصين جهازك ضد التتبع",
-    description: "خطوات عملية وإعدادات متقدمة لحماية هاتفك من التطفل. تطبيقات Screen Protection، VPN مع NextDNS، KeePass، وغيرها.",
-    keywords: ["خصوصية الهاتف", "حماية الشاشة", "VPN", "NextDNS", "KeePass", "Firefox Nightly", "AnySoftKeyboard", "2026"],
-    link: "posts/phone-privacy-2026.html",
-    excerpt: "هاتفك كنز معلومات شخصي، وحمايته أصبحت واجبة. دليل شامل من الشاشة إلى المتصفح، مروراً بـ VPN و DNS خاص، لضمان خصوصية رقمية لا تُخترق."
-}
-];
-        // ========== دالة اختيار عشوائي من المصفوفة ==========
+        const blogPosts = [
+            {
+                id: 1,
+                icon: '💰',
+                title: "ربح البيتكوين من صنابير البيتكوين - دليل شامل 2026",
+                description: "شرح مفصل عن كيفية ربح البيتكوين من صنابير البيتكوين (Faucets) - أفضل طرق الحصول على عملات رقمية مجانية وأماكن موثوقة وآمنة",
+                keywords: ["ربح", "بيتكوين", "صنابير", "عملة"],
+                link: "posts/bitcoin-faucets.html",
+                excerpt: "صنابير البيتكوين (Bitcoin Faucets) هي مواقع وتطبيقات إلكترونية توفر للمستخدمين فرصة الحصول على كميات صغيرة من البيتكوين بشكل مجاني..."
+            },
+            {
+                id: 2,
+                icon: '🤖',
+                title: "الأكثر بحثاً في 2026: ثورة الذكاء الاصطناعي الشاملة",
+                description: "اكتشف لماذا أصبح الذكاء الاصطناعي الأداة الأكثر بحثاً في 2026. تعرف على أفضل الأدوات مثل ChatGPT وMidjourney وكيف تغير حياتنا اليومية.",
+                keywords: ["ذكاء اصطناعي", "2026", "ChatGPT", "أدوات AI", "تعلم الآلة", "تكنولوجيا"],
+                link: "posts/ai-trends-2026.html",
+                excerpt: "شهد عام 2026 طفرة هائلة في البحث عن أدوات الذكاء الاصطناعي. من توليد المحتوى إلى تحليل البيانات، أصبح الذكاء الاصطناعي جزءاً لا يتجزأ من حياتنا اليومية."
+            },
+            {
+                id: 3,
+                icon: '📈',
+                title: "العملات الرقمية 2026: كل شيء عن البيتكوين والإيثيريوم",
+                description: "تحليل شامل لأهم اتجاهات العملات الرقمية في 2026. لماذا لا يزال البيتكوين والإيثيريوم يسيطران على المشهد وكيف تستثمر بذكاء.",
+                keywords: ["عملات رقمية", "بيتكوين", "إيثيريوم", "استثمار", "كريبتو", "2026", "تداول"],
+                link: "posts/crypto-trends-2026.html",
+                excerpt: "في عام 2026، لا يزال سوق العملات الرقمية يهيمن على اهتمام المستثمرين. ارتفع حجم البحث عن 'كيفية شراء بيتكوين' بشكل كبير، مما يعكس رغبة الجميع في فهم هذا العالم المربح."
+            },
+            {
+                id: 4,
+                icon: '⚡',
+                title: "السيارات الكهربائية 2026: ثورة النقل التي لا يستطيع أحد تجاهلها",
+                description: "كل ما تريد معرفته عن السيارات الكهربائية وأسباب تصدرها محركات البحث في 2026. أفضل الموديلات ونصائح الشراء.",
+                keywords: ["سيارات كهربائية", "تسلا", "نقل مستدام", "2026", "بيئة", "طاقة"],
+                link: "posts/electric-vehicles-2026.html",
+                excerpt: "في عام 2026، أصبحت السيارات الكهربائية ليست مجرد رفاهية، بل ضرورة بيئية واقتصادية يتجه إليها العالم. تعرف على أحدث الموديلات وتقنيات الشحن."
+            },
+            {
+                id: 5,
+                icon: '🔐',
+                title: "الأمن السيبراني 2026: حماية خصوصيتك في العالم الرقمي",
+                description: "كل ما تريد معرفته عن الأمن السيبراني وأسباب تصدره محركات البحث في 2026. تهديدات حديثة وأفضل ممارسات الحماية.",
+                keywords: ["أمن سيبراني", "خصوصية رقمية", "حماية بيانات", "2026", "قرصنة", "تشفير"],
+                link: "posts/cyber-security-2026.html",
+                excerpt: "في عام 2026، تصاعدت التهديدات الرقمية بشكل غير مسبوق. تعرف على كيفية حماية بياناتك وأجهزتك من أحدث أساليب الاختراق والتصيد."
+            },
+            {
+                id: 6,
+                icon: '📱',
+                title: "خصوصية الهاتف 2026: الدليل الكامل لتحصين جهازك ضد التتبع",
+                description: "خطوات عملية وإعدادات متقدمة لحماية هاتفك من التطفل. تطبيقات Screen Protection، VPN مع NextDNS، KeePass، وغيرها.",
+                keywords: ["خصوصية الهاتف", "حماية الشاشة", "VPN", "NextDNS", "KeePass", "Firefox Nightly", "AnySoftKeyboard", "2026"],
+                link: "posts/phone-privacy-2026.html",
+                excerpt: "هاتفك كنز معلومات شخصي، وحمايته أصبحت واجبة. دليل شامل من الشاشة إلى المتصفح، مروراً بـ VPN و DNS خاص، لضمان خصوصية رقمية لا تُخترق."
+            }
+        ];
+
+        // دالة عشوائية للمقالات
         function getRandomPosts(count = 6) {
             const shuffled = [...blogPosts].sort(() => 0.5 - Math.random());
             return shuffled.slice(0, Math.min(count, blogPosts.length));
         }
 
-        // ========== عرض المقالات العشوائية في الصفحة الرئيسية ==========
         function displayRandomPosts() {
             const container = document.getElementById('postsContainer');
-            const randomPosts = getRandomPosts(6); // عدد المقالات العشوائية (يمكن تغييره)
-
-            if (randomPosts.length === 0) {
-                container.innerHTML = '<p style="text-align:center;color:#999;">🎲 لا توجد مقالات بعد... عشوائية قادمة!</p>';
-                return;
-            }
-
+            if (!container) return;
+            const randomPosts = getRandomPosts(6);
             container.innerHTML = randomPosts.map(post => `
                 <div class="post-card">
                     <div class="post-image">${post.icon || '🎲'}</div>
                     <h3>${post.title}</h3>
-                    <p>${post.excerpt || post.description}</p>
-                    <a href="${post.link}" class="read-more">اكتشف العشوائية ←</a>
+                    <p>${post.excerpt.substring(0, 110)}...</p>
+                    <a href="${post.link}" class="read-more">اكتشف العشوائية <i class="fas fa-arrow-left"></i></a>
                 </div>
             `).join('');
         }
 
-        // ========== دالة البحث (تستخدم نفس blogPosts) ==========
+        // البحث
         function performSearch() {
             const query = document.getElementById('searchInput').value.trim().toLowerCase();
             const resultsSection = document.getElementById('searchResults');
             const resultsContainer = document.getElementById('resultsContainer');
-
             if (!query) {
                 resultsSection.style.display = 'none';
                 return;
             }
-
-            const results = blogPosts.filter(post => {
-                return post.title.toLowerCase().includes(query) ||
-                       post.description.toLowerCase().includes(query) ||
-                       post.keywords.some(keyword => keyword.toLowerCase().includes(query));
-            });
-
+            const results = blogPosts.filter(post => 
+                post.title.toLowerCase().includes(query) ||
+                post.description.toLowerCase().includes(query) ||
+                post.keywords.some(k => k.toLowerCase().includes(query))
+            );
             displayResults(results, query);
         }
 
-        // ========== عرض نتائج البحث مع تمييز النص ==========
-        function displayResults(results, searchTerm) {
+        function displayResults(results, term) {
             const resultsContainer = document.getElementById('resultsContainer');
             const searchResults = document.getElementById('searchResults');
-
             if (results.length === 0) {
-                resultsContainer.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: #636e72;">😵 لم نجد شيئًا بهذه العشوائية... جرب كلمة أخرى!</p>';
+                resultsContainer.innerHTML = '<p style="text-align:center; grid-column:1/-1; color:#4f5e64;">😵 لم نجد شيئًا بهذه العشوائية... جرب كلمة أخرى!</p>';
             } else {
                 resultsContainer.innerHTML = results.map(post => {
-                    const highlightedTitle = highlightText(post.title, searchTerm);
-                    const highlightedDescription = highlightText(post.description, searchTerm);
+                    const highTitle = highlightText(post.title, term);
+                    const highDesc = highlightText(post.description, term);
                     return `
                         <div class="result-card">
-                            <h3>${highlightedTitle}</h3>
-                            <p>${highlightedDescription}</p>
-                            <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-                                <small style="color: #999;">🏷️ ${post.keywords.join(', ')}</small>
-                                <a href="${post.link}" class="read-more" style="text-decoration: none; font-weight: bold; margin-top: 0.5rem;">اقرأ المقال ←</a>
+                            <h3>${highTitle}</h3>
+                            <p>${highDesc}</p>
+                            <div style="margin-top: 0.8rem; display:flex; justify-content:space-between; align-items:center;">
+                                <small style="color:#6b8c7a;"><i class="fas fa-tags"></i> ${post.keywords.slice(0,3).join(', ')}</small>
+                                <a href="${post.link}" class="read-more" style="margin:0;">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
                             </div>
                         </div>
                     `;
                 }).join('');
             }
-
             searchResults.style.display = 'block';
             searchResults.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
@@ -745,36 +247,28 @@ const blogPosts = [
             return text.replace(regex, '<span class="highlight">$1</span>');
         }
 
-        // ========== معالجة نموذج التواصل ==========
-        function handleContact(event) {
-            event.preventDefault();
-            const form = event.target;
-            const name = form.querySelector('input[type="text"]').value.trim();
-            if (name) {
+        // نموذج التواصل
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const nameInput = this.querySelector('input[type="text"]');
+                const name = nameInput ? nameInput.value.trim() : 'صديق';
                 alert(`شكراً ${name} 🎉\nفكرتك العشوائية وصلت! سنرد عليك بشكل عشوائي أيضاً.`);
-                form.reset();
-            }
+                this.reset();
+            });
         }
 
-        // ========== أحداث جاهزية الصفحة ==========
-        document.addEventListener('DOMContentLoaded', function() {
-            // سنة حقوق النشر
-            document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-            // عرض المقالات العشوائية عند التحميل
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('currentYear').innerText = new Date().getFullYear();
             displayRandomPosts();
-
-            // دعم زر Enter في البحث
             const searchInput = document.getElementById('searchInput');
             if (searchInput) {
-                searchInput.addEventListener('keypress', function(e) {
-                    if (e.key === 'Enter') {
-                        performSearch();
-                    }
+                searchInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') performSearch();
                 });
             }
         });
-
     </script>
 </body>
-</html>
+</html>                
