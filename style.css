@@ -1,13 +1,13 @@
-/* ========= ملف style.css - الثيم الأزرق والأبيض ========= */
+/* ========= إعدادات المتغيرات والألوان - ثيم الأخضر والأبيض ========= */
 :root {
-    --primary-deep: #0b2b40;
-    --primary-soft: #1e6f9f;
-    --primary-light: #3b82f6;
-    --accent-sky: #7dd3fc;
-    --gray-bg: #f4f9fe;
+    --primary-deep: #0f3b2c;
+    --primary-soft: #2c6e49;
+    --primary-light: #4c9a6e;
+    --accent-gold: #e0b354;
+    --gray-bg: #f9faf8;
     --white-pure: #ffffff;
-    --text-dark: #0f172a;
-    --text-muted: #334155;
+    --text-dark: #1e2a32;
+    --text-muted: #4f5e64;
     --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.08);
     --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
@@ -23,21 +23,21 @@
 
 body {
     font-family: 'Cairo', 'Segoe UI', sans-serif;
-    background: #f7fafd;
-    color: #0f172a;
+    background: #fefef7;
+    color: #1e2a2f;
     line-height: 1.6;
     overflow-x: hidden;
 }
 
-/* ========= شريط التنقل ========= */
+/* شريط التنقل الجديد – زجاجي عصري */
 .navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 245, 0.92);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+    border-bottom: 1px solid rgba(44, 110, 73, 0.2);
     padding: 0.8rem 0;
     transition: var(--transition);
 }
@@ -55,7 +55,7 @@ body {
 .nav-brand h1 {
     font-size: 1.9rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #0b2b40, #1e6f9f);
+    background: linear-gradient(135deg, #0f3b2c, #2c6e49);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -65,8 +65,8 @@ body {
 }
 
 .nav-brand h1 span {
-    background: #3b82f6;
-    color: white;
+    background: #e0b354;
+    color: #0f3b2c;
     font-size: 1.2rem;
     padding: 0.1rem 0.6rem;
     border-radius: 40px;
@@ -85,22 +85,22 @@ body {
 .nav-links li a {
     text-decoration: none;
     font-weight: 600;
-    color: #1e293b;
+    color: #1e2a2f;
     padding: 8px 20px;
     border-radius: 40px;
     transition: var(--transition);
 }
 
 .nav-links li a:hover {
-    background: #3b82f6;
+    background: #2c6e49;
     color: white;
-    box-shadow: 0 6px 14px rgba(59, 130, 246, 0.35);
+    box-shadow: 0 6px 14px rgba(44, 110, 73, 0.25);
     transform: translateY(-2px);
 }
 
-/* ========= الهيرو ========= */
+/* الهيرو بتصميم درامي ونظيف */
 .hero {
-    background: linear-gradient(110deg, #e0f2fe 0%, #bae6fd 100%);
+    background: linear-gradient(110deg, #eef5ea 0%, #d9e6d4 100%);
     padding: 90px 0 110px;
     text-align: center;
     position: relative;
@@ -109,27 +109,27 @@ body {
 }
 
 .hero::before {
-    content: "☁️";
+    content: "✨";
     position: absolute;
     font-size: 220px;
-    opacity: 0.12;
+    opacity: 0.1;
     bottom: -40px;
     left: -40px;
-    transform: rotate(-8deg);
+    transform: rotate(-15deg);
     pointer-events: none;
 }
 
 .hero h1 {
     font-size: 3.4rem;
     font-weight: 800;
-    color: #0c4a6e;
+    color: #0a2b21;
     margin-bottom: 1rem;
     letter-spacing: -1px;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #0369a1;
+    color: #2c4a3e;
     max-width: 680px;
     margin: 0 auto 2.5rem;
     opacity: 0.9;
@@ -142,12 +142,12 @@ body {
     margin: 0 auto;
     background: white;
     border-radius: 80px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
     transition: var(--transition);
 }
 
 .search-container:focus-within {
-    box-shadow: 0 18px 40px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 18px 40px rgba(44, 110, 73, 0.25);
     transform: scale(1.02);
 }
 
@@ -163,7 +163,7 @@ body {
 }
 
 .search-btn {
-    background: #1e6f9f;
+    background: #0f3b2c;
     border: none;
     padding: 0 32px;
     border-radius: 0 80px 80px 0;
@@ -178,22 +178,22 @@ body {
 }
 
 .search-btn:hover {
-    background: #0b2b40;
+    background: #1e5942;
     letter-spacing: 0.3px;
 }
 
-/* ========= نتائج البحث ========= */
+/* قسم نتائج البحث بأناقة */
 .search-results {
     background: white;
     padding: 50px 0;
-    border-top: 1px solid #d9e9f7;
-    border-bottom: 1px solid #d9e9f7;
+    border-top: 1px solid #e2e8e6;
+    border-bottom: 1px solid #e2e8e6;
 }
 
 .search-results h2 {
     text-align: center;
     font-size: 1.9rem;
-    color: #0b2b40;
+    color: #0f3b2c;
     margin-bottom: 35px;
 }
 
@@ -204,10 +204,10 @@ body {
 }
 
 .result-card {
-    background: #ffffff;
+    background: #fefcf5;
     padding: 24px;
     border-radius: 24px;
-    border-right: 5px solid #3b82f6;
+    border-right: 5px solid #2c6e49;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
 }
@@ -218,14 +218,14 @@ body {
 }
 
 .highlight {
-    background: #dbeafe;
+    background: #fbe9c3;
     padding: 0 4px;
     border-radius: 8px;
     font-weight: 700;
-    color: #1e3a8a;
+    color: #0f3b2c;
 }
 
-/* ========= بطاقات المقالات ========= */
+/* قسم المقالات (البطاقات الرئيسية) */
 .posts {
     padding: 80px 0;
 }
@@ -233,7 +233,7 @@ body {
 .posts h2 {
     text-align: center;
     font-size: 2.3rem;
-    color: #0b2b40;
+    color: #0f3b2c;
     margin-bottom: 55px;
     position: relative;
 }
@@ -242,7 +242,7 @@ body {
     content: '';
     width: 80px;
     height: 4px;
-    background: #3b82f6;
+    background: #e0b354;
     display: block;
     margin: 12px auto 0;
     border-radius: 8px;
@@ -262,18 +262,18 @@ body {
     box-shadow: var(--shadow-sm);
     display: flex;
     flex-direction: column;
-    border: 1px solid #cbeafe;
+    border: 1px solid #e2f0e6;
 }
 
 .post-card:hover {
     transform: translateY(-12px);
     box-shadow: var(--shadow-lg);
-    border-color: #93c5fd;
+    border-color: #c8dfd1;
 }
 
 .post-image {
     font-size: 3.6rem;
-    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    background: linear-gradient(135deg, #eef3ea, #e2f0e6);
     text-align: center;
     padding: 40px 20px;
     transition: var(--transition);
@@ -281,18 +281,18 @@ body {
 
 .post-card:hover .post-image {
     transform: scale(1.02);
-    background: #bfdbfe;
+    background: #dcf0e2;
 }
 
 .post-card h3 {
     padding: 20px 24px 8px;
     font-size: 1.55rem;
-    color: #1e3a8a;
+    color: #1f4d3a;
 }
 
 .post-card p {
     padding: 0 24px 10px;
-    color: #334155;
+    color: #4f5e64;
     line-height: 1.6;
 }
 
@@ -302,10 +302,10 @@ body {
     align-items: center;
     gap: 8px;
     background: transparent;
-    color: #1e6f9f;
+    color: #2c6e49;
     font-weight: 700;
     text-decoration: none;
-    border-bottom: 2px solid #3b82f6;
+    border-bottom: 2px solid #e0b354;
     width: fit-content;
     transition: var(--transition);
 }
@@ -316,21 +316,21 @@ body {
 }
 
 .read-more:hover {
-    color: #0b2b40;
+    color: #0f3b2c;
     gap: 12px;
-    border-bottom-color: #1e6f9f;
+    border-bottom-color: #2c6e49;
 }
 
-/* ========= قسم من نحن ========= */
+/* قسم "ماذا نقدم" */
 .about {
-    background: #eff6ff;
+    background: #f4f7f2;
     padding: 80px 0;
 }
 
 .about h2 {
     text-align: center;
     font-size: 2.2rem;
-    color: #0b2b40;
+    color: #0f3b2c;
     margin-bottom: 45px;
 }
 
@@ -357,14 +357,14 @@ body {
 }
 
 .about-list li::before {
-    content: "☁️";
+    content: "🌿";
     position: absolute;
     right: -4px;
     top: 0;
-    color: #3b82f6;
+    color: #2c6e49;
 }
 
-/* ========= نموذج التواصل ========= */
+/* نموذج تواصل عصري */
 .contact {
     padding: 80px 0;
     background: white;
@@ -372,7 +372,7 @@ body {
 
 .contact h2 {
     text-align: center;
-    color: #0b2b40;
+    color: #0f3b2c;
     font-size: 2.2rem;
     margin-bottom: 45px;
 }
@@ -380,7 +380,7 @@ body {
 .contact-form {
     max-width: 620px;
     margin: 0 auto;
-    background: #f9fbfe;
+    background: #fefcf7;
     padding: 40px;
     border-radius: 40px;
     box-shadow: var(--shadow-md);
@@ -391,7 +391,7 @@ body {
     width: 100%;
     padding: 14px 20px;
     margin-bottom: 20px;
-    border: 1.5px solid #cbd5e1;
+    border: 1.5px solid #dee6e2;
     border-radius: 28px;
     font-family: 'Cairo', sans-serif;
     font-size: 1rem;
@@ -401,13 +401,13 @@ body {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #3b82f6;
+    border-color: #2c6e49;
     outline: none;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 0 0 3px rgba(44, 110, 73, 0.2);
 }
 
 .contact-form button {
-    background: #1e6f9f;
+    background: #0f3b2c;
     border: none;
     padding: 14px 28px;
     width: 100%;
@@ -420,21 +420,21 @@ body {
 }
 
 .contact-form button:hover {
-    background: #0b2b40;
+    background: #1e5942;
     transform: translateY(-3px);
-    box-shadow: 0 12px 20px rgba(11, 43, 64, 0.25);
+    box-shadow: 0 12px 20px rgba(15, 59, 44, 0.25);
 }
 
-/* ========= تذييل ========= */
+/* تذييل أنيق */
 .footer {
-    background: #0b2b40;
-    color: #cbd5e6;
+    background: #0a2b21;
+    color: #cddfd6;
     text-align: center;
     padding: 32px 0;
     font-size: 0.95rem;
 }
 
-/* ========= استجابة ========= */
+/* استجابات محسنة */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.2rem;
@@ -485,4 +485,4 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 24px;
-}
+    }
